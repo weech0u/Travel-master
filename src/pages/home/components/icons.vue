@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import url("~@/assets/css/varibles.less");
+@import url("~@/assets/styles/varibles.less");
 .icons /deep/ .swiper-container {
   height: 0;
   padding-bottom: 50%;
@@ -87,6 +87,7 @@ export default {
   height: 0;
   padding-bottom: 50%;
   .wrapper {
+    margin-top: .1rem;
     .icon {
       position: relative;
       float: left;

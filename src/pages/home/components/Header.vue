@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import url('~@/assets/css/varibles.less');
+@import url('~@/assets/styles/varibles.less');
 .header {
     display: flex;
     line-height: .86rem;

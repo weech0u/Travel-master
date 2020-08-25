@@ -48,13 +48,13 @@ export default {
 @import url("~@/assets/styles/varibles.less");
 .icons /deep/ .swiper-container {
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 .icons {
   width: 100%;
   overflow: hidden;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
   .wrapper {
     margin-top: .1rem;
     .icon {
@@ -62,14 +62,15 @@ export default {
       float: left;
       min-width: 25%;
       height: 0;
-      padding-bottom: 25%;
+      padding-bottom: 20%;
       .icon-img {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: .44rem;
-        .icon-img-content {
+        height: 1.1rem;
+        img.icon-img-content {
           display: block;
           margin: 0 auto;
           height: 100%;

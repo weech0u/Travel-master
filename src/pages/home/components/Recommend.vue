@@ -2,16 +2,16 @@
   <div class="recommend">
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="recommend-item border-bottom" v-for="item of list" :key="item.id">
-        <div class="item-img-wrapper">
-          <img class="item-img" :src="item.imgUrl" alt="">
-        </div>
-        <div class="item-info">
-          <p class="item-title">{{item.title}}</p>
-          <p class="item-desc">{{item.desc}}</p>
-          <button class="item-button">查看详情</button>
-        </div>
-      </li>
+        <router-link tag="li" class="recommend-item border-bottom" v-for="item of list" :key="item.id" :to="'/detail/' + item.id">
+          <div class="item-img-wrapper">
+            <img class="item-img" :src="item.imgUrl" alt="">
+          </div>
+          <div class="item-info">
+            <p class="item-title">{{item.title}}</p>
+            <p class="item-desc">{{item.desc}}</p>
+            <button class="item-button">查看详情</button>
+          </div>
+        </router-link>
     </ul>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import url('~@/assets/styles/mixins.less');
+@import url("~@/assets/styles/mixins.less");
 .recommend {
   .recommend-title {
     margin-top: 0.2rem;
@@ -49,24 +49,24 @@ export default {
     }
     .item-info {
       flex: 1;
-      padding: .1rem;
-      min-width: 0;// flex:1配合min-width:0保证内容在父盒子内，否则会超出父盒子，导致ellipsis不生效
+      padding: 0.1rem;
+      min-width: 0; // flex:1配合min-width:0保证内容在父盒子内，否则会超出父盒子，导致ellipsis不生效
       .item-title {
-        line-height: .54rem;
-        font-size: .32rem;
+        line-height: 0.54rem;
+        font-size: 0.32rem;
         .ellipsis();
       }
       .item-desc {
-        line-height: .4rem;
-        font-size: .20rem;
+        line-height: 0.4rem;
+        font-size: 0.2rem;
         color: #ccc;
         .ellipsis();
       }
       .item-button {
-        margin-top: .2rem;
+        margin-top: 0.2rem;
         background-color: #ff9300;
-        padding: 0 .1rem;
-        border-radius: .06rem;
+        padding: 0 0.1rem;
+        border-radius: 0.06rem;
         color: #fff;
       }
     }

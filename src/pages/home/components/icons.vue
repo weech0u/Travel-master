@@ -69,7 +69,8 @@ export default {
         top: 0;
         right: 0;
         bottom: .44rem;
-        height: 1.1rem;
+        box-sizing: border-box;
+        padding: .1rem;
         img.icon-img-content {
           display: block;
           margin: 0 auto;
